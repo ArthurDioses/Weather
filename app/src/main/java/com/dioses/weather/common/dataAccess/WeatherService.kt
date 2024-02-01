@@ -1,6 +1,6 @@
 package com.dioses.weather.common.dataAccess
 
-import com.dioses.weather.common.WeatherForecastEntity
+import com.dioses.weather.common.entities.WeatherForecastEntity
 import com.dioses.weather.common.utils.Constants
 import retrofit2.http.GET
 import retrofit2.http.Query

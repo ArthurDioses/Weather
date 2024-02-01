@@ -1,4 +1,4 @@
-package com.dioses.weather.common
+package com.dioses.weather.common.entities
 
 data class WeatherForecastEntity(
     val timeZone: String,

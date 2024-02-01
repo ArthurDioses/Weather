@@ -1,4 +1,4 @@
-package com.dioses.weather.common
+package com.dioses.weather.common.entities
 
 open class WeatherBase(
     dt: Long,

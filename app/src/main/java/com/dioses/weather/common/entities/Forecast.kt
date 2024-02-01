@@ -1,9 +1,9 @@
-package com.dioses.weather.common
+package com.dioses.weather.common.entities
 
-data class Current(
+data class Forecast(
     val dt: Long,
     val humidity: Int,
     val temp: Double,
     val weather: List<Weather>,
-    val sunrise: Long
+    val pop: Double
 ) : WeatherBase(dt, humidity, temp, weather)
