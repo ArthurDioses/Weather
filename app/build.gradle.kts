@@ -46,6 +46,7 @@ val constraint_version = "2.1.4"
 val lifecycle_version = "2.7.0"
 val coroutines_version = "1.7.1"
 val activity_version = "1.8.2"
+val retrofit_version = "1.8.2"
 
 dependencies {
 
@@ -65,6 +66,10 @@ dependencies {
 
     // Kotlin-Activity
     implementation("androidx.activity:activity-ktx:$activity_version")
+
+    //Retrofit
+    implementation("com.squareup.retrofit2:retrofit:$retrofit_version")
+    implementation("com.squareup.retrofit2:converter-gson:$retrofit_version")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
