@@ -6,7 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface WeatherService {
-    @GET(Constants.ON_CALL_PATH)
+    @GET(Constants.ONE_CALL_PATH)
     suspend fun getWeatherForecastByCoordinates(
         @Query(Constants.LATITUDE_PARAM) lat: Double,
         @Query(Constants.LONGITUDE_PARAM) long: Double,
