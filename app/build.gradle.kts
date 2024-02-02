@@ -46,7 +46,7 @@ val constraint_version = "2.1.4"
 val lifecycle_version = "2.7.0"
 val coroutines_version = "1.7.1"
 val activity_version = "1.8.2"
-val retrofit_version = "1.8.2"
+val retrofit_version = "2.9.0"
 
 dependencies {
 
