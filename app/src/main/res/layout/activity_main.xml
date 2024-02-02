@@ -5,6 +5,8 @@
 
     <data>
 
+        <import type="com.dioses.weather.common.utils.CommonUtils" />
+
         <variable
             name="viewModel"
             type="com.dioses.weather.mainModule.viewModel.MainViewModel" />
@@ -62,7 +64,7 @@
                 android:id="@+id/text_view_data_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{String.valueOf(viewModel.result.current.dt)}"
+                android:text="@{@string/weather_dt(CommonUtils.INSTANCE.getHour(viewModel.result.current.dt))}"
                 android:textAppearance="?attr/textAppearanceBody1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
