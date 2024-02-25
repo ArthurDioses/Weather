@@ -33,7 +33,7 @@ class ForecastAdapter(private val listener: OnClickListener) :
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val forecast = getItem(position)
         with(holder as ViewHolder) {
-            holder.binding?.setVariable(BR.current, forecast)
+            holder.binding?.setVariable(BR.forecast, forecast)
             holder.binding?.executePendingBindings()
             setListener(forecast)
         }

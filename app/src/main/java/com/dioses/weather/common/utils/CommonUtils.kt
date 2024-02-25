@@ -9,6 +9,10 @@ object CommonUtils {
         epoch: Long
     ) = getFormatedTime(epoch, "HH:mm")
 
+    fun getFullDate(
+        epoch: Long
+    ) = getFormatedTime(epoch, "dd/MM/yy HH:mm")
+
     private fun getFormatedTime(epoch: Long, pattern: String): String {
         return SimpleDateFormat(pattern, Locale.getDefault()).format(epoch * 1_000)
     }

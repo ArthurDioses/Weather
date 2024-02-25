@@ -10,6 +10,10 @@
         <variable
             name="current"
             type="com.dioses.weather.common.entities.Current" />
+
+        <variable
+            name="forecast"
+            type="com.dioses.weather.common.entities.Forecast" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
