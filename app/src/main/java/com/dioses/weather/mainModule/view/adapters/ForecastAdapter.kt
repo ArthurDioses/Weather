@@ -19,7 +19,7 @@ class ForecastAdapter(private val listener: OnClickListener) :
 
         fun setListener(forecast: Forecast) {
             binding?.root?.setOnClickListener {
-
+                listener.onClick(forecast)
             }
         }
     }
