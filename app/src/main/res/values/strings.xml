@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Weather</string>
     <string name="main_error_server">Error con el servidor.</string>
-    <string name="main_error_empty_forecast">Error forecast</string>
+    <string name="main_error_empty_forecast">Pronóstico no disponible</string>
     <string name="main_current_weather_title">Weather Current:</string>
     <string name="main_forecast_weather_title">Weather Forecast:</string>
 

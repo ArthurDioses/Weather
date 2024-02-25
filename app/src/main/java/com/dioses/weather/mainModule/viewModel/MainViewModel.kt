@@ -25,14 +25,19 @@ class MainViewModel : ViewModel() {
         lat: Double,
         lon: Double,
         appId: String,
+        exclude: String,
         units: String,
         lang: String
     ) {
         viewModelScope.launch {
             try {
                 loaded.value = false
-                val resultServer = repository.getWeatherAndForecast(lat, lon, appId, units, lang)
+                val resultServer =
+                    repository.getWeatherAndForecast(lat, lon, appId, exclude, units, lang)
                 result.value = resultServer
+                if (resultServer.hourly == null || resultServer.hourly.isEmpty()) {
+                    snackBarMsg.value = R.string.main_error_empty_forecast
+                }
             } catch (e: Exception) {
                 snackBarMsg.value = R.string.main_error_server
             } finally {

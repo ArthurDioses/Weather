@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
                 -4.907692770341739,
                 -80.71946571717677,
                 "6a5c325c9265883997730d09be2328e8",
+                "hourly",
                 "metric",
                 "en"
             )
